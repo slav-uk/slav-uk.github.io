@@ -73,3 +73,18 @@ body {
     margin: 10px;
     display: inline-block;
 }
+
+.language-selector a {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.language-selector a:hover {
+    background-color: #0056b3;
+}
