@@ -7,16 +7,26 @@
     <meta name="description" content="Вгадай деталь автомобіля - захоплива гра для автоентузіастів. Відгадуйте марки та деталі автомобілів та покращуйте свої знання про авто. Завантажте гру з Google Play!">
     <meta name="keywords" content="Вгадай деталь автомобіля, гра про автомобілі, автоентузіаст, автомобільні деталі, гра на Google Play, гра для смартфона, автомобільні марки">
     <meta name="author" content="Ваше Ім'я">
+    <link rel="alternate" href="https://example.com/uk" hreflang="uk">
+    <link rel="alternate" href="https://example.com/en" hreflang="en">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Вгадай деталь автомобіля</h1>
-        <p>Відгадуй марки та деталі автомобілів у цій захопливій грі!</p>
+    <div class="language-selector">
+        <button onclick="setLanguage('uk')">Українська</button>
+        <button onclick="setLanguage('en')">English</button>
+    </div>
+    <div class="container" id="content">
+        <h1 data-lang="uk">Вгадай деталь автомобіля</h1>
+        <h1 data-lang="en">Guess the Car Part</h1>
+        <p data-lang="uk">Відгадуй марки та деталі автомобілів у цій захопливій грі!</p>
+        <p data-lang="en">Guess the brands and parts of cars in this exciting game!</p>
         <div class="image-container">
             <img src="images/game-screenshot.jpg" alt="Game Screenshot">
         </div>
-        <a href="https://play.google.com/store/apps/details?id=your_game_id" class="download-button">Завантажити з Google Play</a>
+        <a href="https://play.google.com/store/apps/details?id=your_game_id" class="download-button" data-lang="uk">Завантажити з Google Play</a>
+        <a href="https://play.google.com/store/apps/details?id=your_game_id" class="download-button" data-lang="en">Download from Google Play</a>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
