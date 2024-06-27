@@ -53,34 +53,25 @@ body {
     border-radius: 5px;
     font-size: 1.2em;
     transition: background-color 0.3s;
+    display: block;
+    margin: 10px 0;
 }
 
 .download-button:hover {
     background-color: #218838;
 }
 
-[data-lang="uk"] {
+[data-lang="uk"], [data-lang="en"], [data-lang="de"], [data-lang="pl"], [data-lang="be"], [data-lang="kk"] {
     display: none;
 }
 
-html[lang="uk"] [data-lang="uk"] {
+html[lang="uk"] [data-lang="uk"],
+html[lang="en"] [data-lang="en"],
+html[lang="de"] [data-lang="de"],
+html[lang="pl"] [data-lang="pl"],
+html[lang="be"] [data-lang="be"],
+html[lang="kk"] [data-lang="kk"] {
     display: block;
-}
-
-html[lang="uk"] [data-lang="en"] {
-    display: none;
-}
-
-[data-lang="en"] {
-    display: none;
-}
-
-html[lang="en"] [data-lang="en"] {
-    display: block;
-}
-
-html[lang="en"] [data-lang="uk"] {
-    display: none;
 }
 
 .game-icon {
