@@ -15,18 +15,17 @@ body {
     right: 10px;
 }
 
-.language-selector button {
+.language-selector a {
     background-color: #007bff;
     color: white;
-    border: none;
     padding: 10px 20px;
     margin: 5px;
-    cursor: pointer;
+    text-decoration: none;
     border-radius: 5px;
     font-size: 1em;
 }
 
-.language-selector button:hover {
+.language-selector a:hover {
     background-color: #0056b3;
 }
 
@@ -59,19 +58,6 @@ body {
 
 .download-button:hover {
     background-color: #218838;
-}
-
-[data-lang="uk"], [data-lang="en"], [data-lang="de"], [data-lang="pl"], [data-lang="be"], [data-lang="kk"] {
-    display: none;
-}
-
-html[lang="uk"] [data-lang="uk"],
-html[lang="en"] [data-lang="en"],
-html[lang="de"] [data-lang="de"],
-html[lang="pl"] [data-lang="pl"],
-html[lang="be"] [data-lang="be"],
-html[lang="kk"] [data-lang="kk"] {
-    display: block;
 }
 
 .game-icon {
