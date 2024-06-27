@@ -82,3 +82,17 @@ html[lang="en"] [data-lang="en"] {
 html[lang="en"] [data-lang="uk"] {
     display: none;
 }
+
+.game-icon {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: auto;
+}
+
+.game-screenshot {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    display: inline-block;
+}
